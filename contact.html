@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pool Cleaning Services</title>
+    <title>Contact Us - Pool Cleaning Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,9 +18,20 @@
         </nav>
     </header>
     <main>
-        <section id="home">
-            <h1>Welcome to Our Pool Cleaning Services</h1>
-            <p>We offer professional pool cleaning services to keep your pool sparkling clean and ready to enjoy.</p>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
