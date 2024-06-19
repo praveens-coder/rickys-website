@@ -5,10 +5,10 @@ const fs = require('fs');
 const app = express();
 const port = 3000;
 
-// Define the path to the 'public' directory
-const staticDir = path.join(__dirname, 'public');
+// Define the path to the 'docs' directory
+const staticDir = path.join(__dirname, 'docs');
 
-// Middleware to serve static files (CSS, JS, images, etc.) from 'public'
+// Middleware to serve static files (CSS, JS, images, etc.) from 'docs'
 app.use(express.static(staticDir));
 
 // Route handlers for different pages
